@@ -1,71 +1,85 @@
-# Cavosh Coffee - Backend ☕
+# ☕ Cavosh Coffee - Backend  
 
-Este es el backend del sistema **Cavosh Coffee**, desarrollado con **Spring Boot**, **Java 17** y **H2 Database** para
-entorno de desarrollo.
+Este repositorio contiene el **backend de Cavosh Coffee**, desarrollado con **Spring Boot**, **Java 17** y **H2 Database** para el entorno de desarrollo.  
 
-## 🚀 Requisitos Previos
+---
 
-- [Java 17](https://adoptium.net/)
-- [Maven 3.8+](https://maven.apache.org/)
-- IDE recomendado: [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+## 📋 Requisitos Previos  
 
-## ⚙️ Configuración del Proyecto
+- [Java 17](https://adoptium.net/)  
+- [Maven 3.8+](https://maven.apache.org/)  
+- IDE recomendado: [IntelliJ IDEA](https://www.jetbrains.com/idea/)  
 
-1. Clona el repositorio:
+---
+
+## ⚙️ Configuración del Proyecto  
+
+1. Clonar el repositorio:  
    ```bash
    git clone
    cd cavosh-coffee-backend
-   ```
-2. Abre con IntelliJ IDEA
-3. Construye el proyecto:
+
+2. Abrir el proyecto con **IntelliJ IDEA** (o el IDE de tu preferencia).
+3. Construir con Maven:
+
    ```bash
    mvn clean install
    ```
-4. Corre la aplicación:
+4. Ejecutar la aplicación:
+
    ```bash
    mvn spring-boot:run
    ```
 
+---
+
 ## 🗄️ Base de Datos
 
-- En desarrollo se usa H2 Database en memoria.
-- La consola de H2 estará disponible en:
+* En desarrollo se utiliza **H2 Database en memoria**.
 
-    ```bash
-    http://localhost:8080/h2-console
-    ```
+* Consola accesible en:
 
-- Configuración por defecto:
+  👉 [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
 
-    ```bash
-    Driver Class: org.h2.Driver
-    JDBC URL: jdbc:h2:mem:coffee
-    User: sa
-    Password: (vacio)
-    ```
+* Configuración por defecto:
 
-⚠️ Los datos se pierden al reiniciar la aplicación, ya que la DB es en memoria.
+  ```
+  Driver Class: org.h2.Driver
+  JDBC URL: jdbc:h2:mem:coffee
+  User: sa
+  Password: (vacío)
+  ```
+
+⚠️ Nota: los datos se pierden al reiniciar la aplicación, ya que la base de datos está en memoria.
+
+---
 
 ## 📡 Endpoints
 
-- El proyecto incluye una colección de Postman exportada en la carpeta /postman.
-- Puedes importarla en tu Postman y probar todos los endpoints de la API fácilmente.
+* Dentro de la carpeta `/postman` encontrarás una colección exportada para **Postman**.
+* Puedes importarla y probar todos los endpoints de la API fácilmente.
 
-## 📦 Estructura del Proyecto
+---
 
-    /src
-        /main
-            /java
-                com.tuorg.cavoshcoffee # Código fuente principal
-            /resources
-                application.properties # Configuración
-    /postman # Colección de Postman para probar la API
+## 📂 Estructura del Proyecto
 
-🔧 Tecnologías Usadas:
+```
+/src
+   /main
+      /java
+         com.tuorg.cavoshcoffee   # Código fuente
+      /resources
+         application.properties   # Configuración
+/postman   # Colección de Postman para pruebas
+```
 
-- Spring Boot 3.5.5
-- Spring Web
-- Spring Security
-- Spring Data JPA
-- H2 Database
-- Maven
+---
+
+## 🚀 Tecnologías Utilizadas
+
+* Spring Boot 3.5.5
+* Spring Web
+* Spring Security
+* Spring Data JPA
+* H2 Database
+* Maven
